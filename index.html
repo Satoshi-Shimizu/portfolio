@@ -19,18 +19,17 @@
 	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Istok+Web:400,700" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
-
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-
 	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-
 	<link rel="stylesheet" href="css/components/ion.rangeslider.css" type="text/css" />
-
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 	<meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+	<!-- Script Sheet -->
+	<script src="https://sdk.form.run/js/v2/formrun.js"></script><!-- for form run-->
 
 	<!-- Hosting Demo Specific Stylesheet -->
 	<link rel="stylesheet" href="css/colors.php?color=44aaac" type="text/css" /> <!-- Theme Color -->
@@ -376,10 +375,33 @@
 								<div class="before-heading">Send information</div>
 								<h2>Contact</h2>
 								<p>制作・ご相談、お気軽にご連絡ください。</p>
-							</div>
-							<div class="col-md-8">
-								<a href="mailto:3104shimizu.info@gmail.com?subject=【問い合わせ】◯◯の件&amp;body=こちらにご記入ください。イタズラはご遠慮願います。" class="button center bg-white color button-light button-rounded button-large ml-0">お問い合わせ</a>
-							</div>
+
+								<!-- class, action, methodを変更しないでください -->
+								<form class="formrun" action="https://form.run/@satolog-studio/thanks" method="post" data-formrun-saving="true">
+									<!-- ↓自由に要素を追加・編集することができます -->
+									<div class="form-group"> 
+										<input type="name" class="form-control text-white" id="exampleInputName" name="お名前" type="text" placeholder="お名前">
+									</div>
+
+									<div class="form-group">
+										<input class="form-control text-white" name="メールアドレス" type="text" data-formrun-type="email" id="exampleFormControlInput" placeholder="example@example.com" data-formrun-required>
+										<div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+									</div>
+
+									<div class="form-group">
+										<textarea class="form-control text-white" id="exampleFormControlTextarea" name="お問い合わせ" rows="5" placeholder="お問い合わせ" data-formrun-required></textarea>
+									</div>
+
+									<!-- ボット投稿をブロックするためのタグ -->
+									<div class="_formrun_gotcha">
+										<style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+										<label for="_formrun_gotcha">If you are a human, ignore this field</label>
+										<input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+									</div>
+
+								<button class="button center bg-white color button-light button-rounded button-large ml-0" type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">問い合わせしてみる</button>
+							</form>
+						</div>
 						</div>
 					</div>
 				</div>
