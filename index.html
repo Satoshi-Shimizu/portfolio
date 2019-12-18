@@ -16,7 +16,6 @@
 
 	<!-- Stylesheets
 	============================================= -->
-	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Istok+Web:400,700" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
@@ -377,10 +376,11 @@
 								<p>制作・ご相談、お気軽にご連絡ください。</p>
 
 								<!-- class, action, methodを変更しないでください -->
-								<form class="formrun" action="https://form.run/@satolog-studio/thanks" method="post" data-formrun-saving="true">
+								<form class="formrun" action="thanks.html" method="post">
 									<!-- ↓自由に要素を追加・編集することができます -->
 									<div class="form-group"> 
 										<input type="name" class="form-control text-white" id="exampleInputName" name="お名前" type="text" placeholder="お名前">
+										<div data-formrun-show-if-error="お名前">お名前を入力してください</div>
 									</div>
 
 									<div class="form-group">
