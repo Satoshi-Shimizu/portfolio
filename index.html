@@ -27,9 +27,6 @@
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 	<meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
 
-	<!-- Script Sheet -->
-	<script src="https://sdk.form.run/js/v2/formrun.js"></script><!-- for form run-->
-
 	<!-- Hosting Demo Specific Stylesheet -->
 	<link rel="stylesheet" href="css/colors.php?color=44aaac" type="text/css" /> <!-- Theme Color -->
 	<link rel="stylesheet" href="demos/hosting/css/fonts.css" type="text/css" />
@@ -375,21 +372,19 @@
 								<h2>Contact</h2>
 								<p>制作・ご相談、お気軽にご連絡ください。</p>
 
-								<!-- class, action, methodを変更しないでください -->
-								<form class="formrun" action="thanks.html" method="post">
-									<!-- ↓自由に要素を追加・編集することができます -->
+								<form class="formrun" action="https://form.run/api/v1/r/mkeiolqdovh5tks91x67cmgf" method="post">
 									<div class="form-group"> 
-										<input type="name" class="form-control text-white" id="exampleInputName" name="お名前" type="text" placeholder="お名前">
+										<input type="name" class="form-control text-white" name="お名前" type="text" placeholder="お名前">
 										<div data-formrun-show-if-error="お名前">お名前を入力してください</div>
 									</div>
 
 									<div class="form-group">
-										<input class="form-control text-white" name="メールアドレス" type="text" data-formrun-type="email" id="exampleFormControlInput" placeholder="example@example.com" data-formrun-required>
+										<input class="form-control text-white" name="メールアドレス" type="text" data-formrun-type="email" placeholder="example@example.com" data-formrun-required>
 										<div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
 									</div>
 
 									<div class="form-group">
-										<textarea class="form-control text-white" id="exampleFormControlTextarea" name="お問い合わせ" rows="5" placeholder="お問い合わせ" data-formrun-required></textarea>
+										<textarea class="form-control text-white" name="お問い合わせ" rows="5" placeholder="お問い合わせ" data-formrun-required></textarea>
 									</div>
 
 									<!-- ボット投稿をブロックするためのタグ -->
@@ -398,8 +393,7 @@
 										<label for="_formrun_gotcha">If you are a human, ignore this field</label>
 										<input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
 									</div>
-
-								<button class="button center bg-white color button-light button-rounded button-large ml-0" type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">問い合わせしてみる</button>
+								<button class="button button-border button-light button-rounded uppercase nomargin" type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">問い合わせしてみる</button>
 							</form>
 						</div>
 						</div>
@@ -501,6 +495,9 @@
 
 	<script src="js/jquery.hotspot.js"></script>
 	<script src="js/components/rangeslider.min.js"></script>
+	
+	<!-- for form run-->
+	<script src="https://sdk.form.run/js/v2/formrun.js"></script>
 
 	<!-- Footer Scripts
 	============================================= -->
