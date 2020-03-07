@@ -547,8 +547,5 @@ body.top-search-open #header .button { opacity: 0; }
 
 	.owl-stage-outer:before,
 	.owl-stage-outer:after { display: none; }
-
-	.slider-bottom-box { padding: 15px; }
-
 	.img-map { opacity: 0.2; }
 }
