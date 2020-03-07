@@ -9696,7 +9696,7 @@ body:not(.device-touch) .clients-grid li a {
 }
 
 .testi-content p {
-	margin-bottom: 0;
+	margin-bottom: 	1.6em;
 	font-family: 'Crete Round', serif;
 	font-style: italic;
 }
