@@ -28,8 +28,8 @@ var swiper = new Swiper('.swiper-container', {
   paginationClickable: true,
   simulateTouch: true,
   slidesPerView: 3, /* 複数のスライド設定 */
-  spaceBetween: 3,  /* スライドとスライドの間の距離（余白）単位:px */
-  initialSlide: 2,  /*一番最初に表示させるスライドの番号(0スタート)。デフォルトでは0。 */
+  spaceBetween: 5,  /* スライドとスライドの間の距離（余白）単位:px */
+  initialSlide: 0,  /*一番最初に表示させるスライドの番号(0スタート)。デフォルトでは0。 */
   centeredSlides : true,
   autoHeight: true, /* 自動で高さ調整 */
   /*  ページネーション設定  */
@@ -45,15 +45,25 @@ var swiper = new Swiper('.swiper-container', {
     disableOnInteraction: true,
   },
 
+  
   /*  ブレイクポイント設定  */
   breakpoints: {
     767: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+      initialSlide: 0,
+    }
+  },
+
+  /*  ブレイクポイント設定  */
+  breakpoints: {
+    543: {
       slidesPerView: 1,
-      spaceBetween: 3,
-      initialSlide: 1,
+      spaceBetween: 5,
+      initialSlide: 0,
     }
   }
-  
+
 });
 
 /*
