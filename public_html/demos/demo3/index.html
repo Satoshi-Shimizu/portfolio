@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- fontawesome v5 CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CNoto+Sans+JP:400,700&display=swap" rel="stylesheet">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
+    <!-- WOW(アニメーション) -->
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- hiraku2(ドロワーメニュー) -->
+    <link rel="stylesheet" type="text/css" href="hiraku2-master/css/hiraku.css">
+    <script src="hiraku2-master/js/hiraku.js"></script>
+
+    <!-- Orgnal CSS
+    ===================================================-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- SITE TITLE
+    ===================================================-->
+    <title>CAMP SITE</title>
+
+    <!-- OGP Setteing
+    ===================================================-->
+    <meta property="og:title" content="《公式サイト》CAMP SITEM名" />
+    <meta property="og:site_name" content="《公式サイト》CAMP SITEM名" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://satolog-studio.xyz/demos/demo2/index.html" />
+    <meta property="og:image" content="http://satolog-studio.xyz/demos/demo2/images/ogp-image.jpg" />
+    <meta property="og:description" content="オートキャンプ・コテージ・グランピングで自然を楽しもう！" />
+
+    <!-- facebook -->
+    <meta property="fb:app_id" content="1354739371394699" />
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="《公式サイト》CAMP SITEM名" />
+    <meta name="twitter:description" content="オートキャンプ・コテージ・グランピングで自然を楽しもう！" />
+    <meta name="twitter:url" content="http://satolog-studio.xyz/demos/demo2/index.html" />
+    <meta name="twitter:domain" content="http://satolog-studio.xyz/demos/demo2/index.html" />
+    <meta name="twitter:site" content="@[Twitter ID]" />
+  </head>
+
+  <body>
+    <!-- Header
+    ============================================= -->
+    <header id="header" class="full-header">
+      <div class="navbar-header">
+        <!-- グローバルメニュー
+        ============================================= -->
+        <nav class="navbar fixed-top navbar-expand-md">
+          <!-- Logo
+          ============================================= -->
+          <a class="navbar-brand ml-5" href=".">
+            <div class="site-tile">CAMP SITE</div>
+          </a>
+
+          <button class="hiraku-open-btn" id="offcanvas-btn-right" data-toggle-offcanvas="#js-hiraku-offcanvas-1">
+            <span class="hiraku-open-btn-line"></span>
+          </button>
+    
+          <!-- グローバルメニュー
+          ============================================= -->
+          
+          <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav4">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#news">お知らせ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#stay">宿泊プラン</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#play">食べる・遊ぶ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#photo">フォト</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#access">アクセス</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">ご予約・お問い合わせ</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+      </div><!-- end navbar-header -->
+      
+      <!-- ドロワーメニュー -->
+      <div class="offcanvas-right">
+        <ul class="drawer-menu">
+          <li><a class="drawer-menu-item" href="#news">お知らせ</a></li>
+          <li><a class="drawer-menu-item" href="#stay">宿泊プラン</a></li>
+          <li><a class="drawer-menu-item" href="#play">食べる・遊ぶ</a></li>
+          <li><a class="drawer-menu-item" href="#photo">フォト</a></li>
+          <li><a class="drawer-menu-item" href="#access">アクセス</a></li>
+          <li><a class="drawer-menu-item" href="#contact">ご予約・お問い合わせ</a></li>
+        </ul>
+      </div>
+    </header><!-- end header -->
+
+    <!-- ファーストビュー
+    ============================================= -->
+    <div class="main-view">
+      <div class="main-view-filter">
+        <div class="slide-content">
+          <h1>Hungry for camping?</h1>
+          <p class="main-view-lead">緑豊かで四季折々の表情を見せる高原をベースに、ここででしか体験できない <br> 特別なキャンプ体験をご提案します。</p>
+          
+          <a href="#contact">
+            <button type="button" class="btn-bg-orange btn-lg">予約・お問い合わせ</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  <!-- スムーススクロール
+  ============================================= -->
+  <div class="floating">
+    <a href="#"><i class="fas fa-tree fa-2x"></i></a>
+  </div>
+  
+  <!-- お知らせ What's new
+  ============================================= -->
+  <section id="news" class="container-wrapper bg-color-white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 news-bg news-container">
+          <!-- title--> 
+          <div class="row pt-5">
+            <h2 class="col-12">お知らせ</h2>
+            <p class="lead"></p>
+          </div>
+
+          <!-- contents 
+            https://publish.twitter.com/#-->
+          <div class="row">
+            <div class="col-12 text-center">
+              <a class="twitter-timeline" data-width="530" data-height="150" data-theme="light" data-tweet-limit="3" href="https://twitter.com/kusakari1975?ref_src=twsrc%5Etfw">Tweets by kusakari1975</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- stay 宿泊プラン
+  ============================================= -->
+  <section id="stay" class="container-wrapper bg-color-green">
+    <div class="container">
+      <!-- title-->
+      <div class="row">
+        <h2 class="col-12">宿泊プラン</h2>
+        <p class="lead">各棟オーナーさんこだわりの別荘を、自分たちだけの貸切でご利用いただける、特別な宿泊施設です。各棟に様々な特徴があり、ご利用人数やニーズに合わせてお好きな棟をお選び頂き、春夏秋冬、様々なアウトドアアクティビティや行楽の拠点に、ぜひご利用くださいませ。</p>
+      </div>
+
+      <!-- contents -->
+      <div class="row stay-content-wrapper">
+
+        <!-- card item 1 -->
+        <div class="col-md-12 col-lg-4">
+          <div class="card">
+            <div class="card-header-block">
+              <div class="card-tite">オートキャンプサイト</div>
+              <div class="card-price-block">
+                <span class="price">5,000</span>
+                <span class="unit">円/day</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-image-block">
+                <img class="card-img-top" src="./images/campsite2.jpg" alt="Card image cap">
+              </div>
+              <div class="inner-card-info">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Size</li>
+                  <li class="list-group-item">Remark</li>
+                  <li class="list-group-item"></li>
+                  <li class="list-group-item"></li>  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- card item 2 -->
+        <div class="col-md-12 col-lg-4">
+          <div class="card">
+            <div class="card-header-block">
+              <div class="card-tite">バンガロー</div>
+              <div class="card-price-block">
+                <span class="price">7,000</span>
+                <span class="unit">円/day</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-image-block">
+                <img class="card-img-top" src="./images/campsite3.jpg" alt="Card image cap">
+              </div>
+            </div>
+            <div class="inner-card-info">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Size</li>
+                <li class="list-group-item">Remark</li>
+                <li class="list-group-item"></li>
+                <li class="list-group-item"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- card item 3 -->
+        <div class="col-md-12 col-lg-4">
+          <div class="card">
+            <div class="card-header-block">
+              <div class="card-tite">ロッジ</div>
+              <div class="card-price-block">
+                <span class="price">8,000</span>
+                <span class="unit">円/day</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-image-block">
+                <img class="card-img-top" src="./images/campsite5.jpg" alt="Card image cap">
+              </div>
+            </div>
+            <div class="inner-card-info">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Size</li>
+                <li class="list-group-item">Remark</li>
+                <li class="list-group-item"></li>
+                <li class="list-group-item"></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- play 食べる・遊ぶ
+  ============================================= -->
+  <section id="play" class="container-wrapper bg-color-white">
+    <div class="container">
+      <!-- title-->
+      <div class="row">
+        <h2 class="col-12">食べる・遊ぶ</h2>
+        <p class="lead">各棟オーナーさんこだわりの別荘を、自分たちだけの貸切でご利用いただける、特別な宿泊施設です。 各棟に様々な特徴があり、ご利用人数やニーズに合わせてお好きな棟をお選び頂き、春夏秋冬、様々なアウトドアアクティビティや行楽の拠点に、 ぜひご利用くださいませ。</p>
+      </div>
+      <!-- contents -->
+      <div class="row stay-content-wrapper">
+
+        <!-- card item 1 -->
+        <div class="col-md-12 col-lg-4">
+          <div class="card border-green">
+            <div class="card-header-block">
+              <p>BBQ</p>
+            </div>
+            <div class="card-body">
+              <div class="card-image-block">
+                <img class="card-img-top" src="./images/bbq1.jpg" alt="Card image cap">
+              </div>
+              <div class="inner-card-info">
+                <p>小川のせせらぎを聞きながら大空の下で格別なBBQを楽しめます。BBQグリル、テーブル＆チェアをご用意しております。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- card item 2 -->
+        <div class="col-md-12 col-lg-4">
+          <div class="card border-green">
+            <div class="card-header-block">
+              <p>釣り</p>
+            </div>
+            <div class="card-body">
+              <div class="card-image-block">
+                <img class="card-img-top" src="./images/fish1.jpg" alt="Card image cap">
+              </div>
+            </div>
+            <div class="inner-card-info">
+              <p>キャンプ場内の釣り堀を使用してニジマス釣りを楽しめます。道具は全てレンタル料金がかかりますが、釣った魚を美味しく食べれるのは忘れられない思い出です。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card item 3 -->
+        <div class="col-md-12 col-lg-4">
+          <div class="card border-green">
+            <div class="card-header-block">
+              <p>広場</p>
+            </div>
+            <div class="card-body">
+              <div class="card-image-block">
+                <img class="card-img-top" src="./images/park1.png" alt="Card image cap">
+              </div>
+            </div>
+            <div class="inner-card-info">
+              <p>キャンプ場内に大自然を切り取った コミュニティー広場があります。</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- photo フォト
+  ============================================= -->
+  <section id="photo" class="container-wrapper bg-color-green">
+    <div class="container">
+      <!-- title-->
+      <div class="row">
+        <h2 class="col-12">フォト</h2>
+        <p class="lead">皆さんの素敵な思い出を投稿しませんか？ Twiiter #キャンプサイト名で投稿いただくと、掲載されます。</p>
+      </div>
+
+      <div class="row">
+        <div class="col-12 text-center">
+          <a class="twitter-timeline" data-width="540" data-height="600" href="https://twitter.com/camp_door?ref_src=twsrc%5Etfw">Tweets by camp_door</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Access アクセス
+  ============================================= -->
+  <section id="access" class="container-wrapper bg-color-white">
+    <div class="container">
+      <!-- title-->
+      <div class="row">
+        <h2 class="col-12">アクセス</h2>
+        <div class="col-12">
+          <p>〒500-6126 <br> 岐阜県岐阜市橋本町１丁目</p>
+
+          <div class="container access-container">
+
+            <!-- Google Map -->
+            <div class="row">
+              <div class="col-sm-12">
+                <!-- MAP -->
+                <div class="iframe-wrap">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3251.8272549475328!2d136.75427155113007!3d35.40953215233454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003a93773be07c3%3A0x18c44a3f47fec311!2z5bKQ6Zic6aeF!5e0!3m2!1sja!2sjp!4v1583812059386!5m2!1sja!2sjp" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+              </div>
+            </div><!-- end of Google Map -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact
+  ============================================= -->
+  <section id="contact" class="container-wrapper bg-color-green">
+
+    <div class="container">
+      <!-- title -->
+      <div class="row">
+        <div class="col-12">
+          <h2>ご予約・お問い合わせ</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 col-lg-4">
+          <div class="contact-wrapper">
+            <div class="contact-title">
+              ご予約
+            </div>
+            <div class="owner-block">
+              <div class="owner-info">
+                <img src="./images/comments1@2x.png" alt="owner-icon">
+                <div class="owner-name">オーナ名</div>
+              </div>
+
+              <p class="contact-body">事務局(10時～18時）の営業時間外等、こちらのコンタクトフォームでお気軽にお問い合わせください。</p>
+              
+              <p class="phone">TEL: 0000-00-0000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-8">
+          <!-- Contact Form -->
+          <div class="contact-wrapper bg-white mx-auto">
+            <div class="contact-title">
+              お問い合わせ
+            </div>
+            <form>
+              
+              <!-- #問い合わせ Type Input -->
+              <div class="form-row form-group">
+                <div class="col-md-4">
+                  <span class="badge badge-danger badge-outlined">必須</span>
+                  <label for="staticName" class="col-form-label">お問い合わせ種別</label>
+                </div>
+                <div class="col-md-8">
+                  <select id="inputState" class="border form-control">
+                    <option value="----" selected>---</option>
+                    <option value="サービスについて" >サービスについて</option>
+                    <option value="料金プランについて">料金プランについて</option>
+                    <option value="その他">その他</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- #氏名 Input -->
+              <div class="mb-3">
+                <div class="form-row form-group">
+                  <div class="col-md-4">
+                    <span class="badge badge-danger badge-outlined">必須</span>
+                    <label for="inputName">氏名</label>
+                  </div>
+                  <div class="col-md-8">
+                    <input type="name" class="no-border form-control" id="inputName" placeholder="氏名">
+                  </div>
+                </div>
+
+                <div class="form-row form-group">
+                  <div class="col-md-4">
+                    <span class="badge badge-danger badge-outlined">必須</span>
+                    <label for="inputLastName">フリガナ</label>
+                  </div>
+                  <div class="col-md-8">
+                    <input type="furigana" class="no-border form-control" id="inputFurigana" placeholder="フリガナ">
+                  </div>
+                </div>
+
+                <!-- #Eメールアドレス Input -->
+                <div class="form-row form-group">
+                  <div class="col-md-4">
+                    <span class="badge badge-danger badge-outlined">必須</span>
+                    <label for="staticEmail">Eメールアドレス</label>
+                  </div>
+                  <div class="col-md-8">
+                    <input type="text" class="no-border form-control" id="email" placeholder="example@example.com">
+                  </div>
+                </div>
+
+              <!-- #問い合わせ内容 Input -->
+              <div class="form-row form-group">
+                <div class="col-md-12">
+                  <label for="staticMessage" class="col-form-label">メッセージ</label>
+                </div>
+                <div class="col-md-12">
+                  <textarea class="form-control border" id="exampleFormControlTextarea1" rows="5" placeholder="お問い合わせを入力してください"></textarea>
+                </div>
+              </div>
+
+              <!-- #送信ボタン -->
+              <div class="form-group row">
+                <div class="col-sm-12 text-center">
+                  <button type="submit" class="btn-bg-orange btn-lg">送信する</button>
+                </div>
+              </div>
+
+            </form>
+
+          </div><!-- end Contact Form  -->
+
+        </div> <!-- end col-10 -->
+      </div><!-- end row -->
+
+    </div><!-- end container -->
+
+  </section>
+
+  <!--   FOOTER START================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- Logo
+        ============================================= -->
+        <div class="col-md-12">
+          <div class="footer-menu">
+            <div class="footer-brand">
+              <p>CAMP SITE.</p>
+            </div>
+            <div class="footer-copy-text">
+              <p>© Camp Site Landing page Sample.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- Jave Script
+  ============================================= -->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- Swiper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <!-- WOW(アニメーション) -->
+  <script src="dist/wow.min.js"></script>
+  <script src="js/script.js"></script>
+  
+  </body>
+</html>
