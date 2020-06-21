@@ -1,634 +1,575 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<!--
+こんにちは。ソースコード見に来たのですね。
+このポートフォリオはテンプレじゃないですよ。
+|￣￣￣￣￣￣￣￣￣|
+|お仕事クダサイYO　|
+|＿＿＿＿＿＿＿＿＿|
+　　　∧,,∧　||
+. 　( ゜д゜)　||
+.　 /　づΦ
+-->
+<!doctype html>
+<html lang="ja">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="SemiColonWeb" />
+  <!-- ファビコン
+  ===================================================-->
+  <link rel="icon" href="/images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-	<!-- Twitter card
-	============================================= -->
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:site" content="@3104shimizu" />
-	<meta property="og:url" content="satolog-studio.xyz" />
-	<meta property="og:title" content="| Satolog | Studio | ポートフォリオ |" />
-	<meta property="og:description" content="あなたの'やりたい'をWebで形にします!!" />
-	<meta property="og:image" content="http://satolog-studio.xyz/demos/hosting/images/1.png" />
-
-	<!-- Stylesheets
-	============================================= -->
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-	<link rel="stylesheet" href="style.css" type="text/css" />
-	<link rel="stylesheet" href="css/dark.css" type="text/css" />
-	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="css/animate.css" type="text/css" />
-	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+  <!-- Impot Stylesheets
+  ===================================================-->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
 	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/components/ion.rangeslider.css" type="text/css" />
-	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
-	<meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
 
-	<!-- Hosting Demo Specific Stylesheet -->
-	<link rel="stylesheet" href="css/colors.php?color=44aaac" type="text/css" /> <!-- Theme Color -->
-	<link rel="stylesheet" href="demos/hosting/css/fonts.css" type="text/css" />
-	<link rel="stylesheet" href="demos/hosting/hosting.css" type="text/css" />
-	<!-- / -->
+  <!-- Import Font
+  ===================================================-->
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
 
-	<!-- Document Title
-	============================================= -->
-	<title>Satolog | Studio</title>
+  <!-- Orgnal CSS
+  ===================================================-->
+  <link rel="stylesheet" href="style.css">
 
+  <!-- SITE TITLE
+  ===================================================-->
+  <title>SATOLABO STUDIO</title>
+
+  <!-- OGP Setteing
+  ===================================================-->
+  <meta property="og:title" content="SATOLABO STUDIO" />
+  <meta property="og:site_name" content="SATOLABO STUDIO" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://satolog-studio.xyz/index.html" />
+  <meta property="og:image" content="http://satolog-studio.xyz/images/ogp-image.jpg" />
+  <meta property="og:description" content="WEB制作現場のリソース課題を解決します" />
+
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SATOLABO STUDIO" />
+  <meta name="twitter:description" content="WEB制作現場のリソース課題を解決します" />
+  <meta name="twitter:url" content="http://satolog-studio.xyz/index.html" />
+  <meta name="twitter:domain" content="http://satolog-studio.xyz/index.html" />
+  <meta name="twitter:site" content="@[Twitter ID]" />
 </head>
 
-<body class="stretched">
+<body>
+    <!-- Header 
+    ============================================= -->
+    <header id="header">
+      <div class="wrapper">
 
-	<!-- Document Wrapper
-	============================================= -->
-	<div id="wrapper" class="clearfix">
+        <div class="header-subnav sp-header-none">
+          <h1 class="header-ttl-text">リソース課題解決します | SATOLABO</h1>
+          <div class="header-cv-btn">
+              <a target="_blank" href="https://twitter.com/3104shimizu">Twitter DM</a>
+          </div>
+          <div class="header-cv-btn">
+            <a href="#contact">ご相談・お問い合わせ</a>
+          </div>
+        </div>
+        <div class="area-nav">
+          <!-- Logo
+          ============================================ -->
+          <div class="header-logo">
+            <a href="/"><img src="/images/Logo-title-200×40.png" alt="SATOLAB LOGO"></a>
+          </div>
+          <!-- Navbar
+          ============================================ -->
+          <ul class="header-nav">
+            <!-- Mune
+            ============================================ -->
+            <li id="menu-consept" class="munu-text"><a href="#consept"><span>大切にしている考え方</span></a></li>
+            <li id="menu-works" class="munu-text"><a href="#works"><span>制作実績</span></a></li>
+            <li id="menu-profile" class="munu-text"><a href="#profile"><span>自己紹介</span></a></li>
+          </ul>
+          
+          <div class="menu-trigger pc-header-none">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
 
-		<!-- Top Bar
-		============================================= -->
-		<!-- <div id="top-bar" class="center dark" style="background-color: #15888a">
-			<p class="mb-0 text-white" style="font-size: 14px;">Holisticly cultivate multifunctional quality vectors after Mobile SDK.<a href="#" class="ml-2 font-primary t700 text-white"><u>Learn More</u> &#8250;</a></p>
-		</div> -->
+    </header>
 
-		<!-- Header
-		============================================= -->
-		<header id="header" class="full-header transparent-header dark" data-sticky-class="not-dark">
+    <!-- ファーストビュー
+    ============================================= -->
+    <div class="kv">
+      <div class="wrapper">
+        <p class="kv-catch-title">
+          <span class="kv-catch-svg">
+            <img src="/images/fv-title.png" alt="現場のリソース課題を解決します">
+          </span>
+          Webフリーランスエンジニア
+        </p>
+        <p class="kv-catch-text">
+          広告とは、広く告知すること。<br>そして、デジタルマーケティングとは"誰"に対し、”何”をどんな手段でどのように伝えるか、伝わるかを試行錯誤すること。<br><br>ぼくは、その中でWeb技術を使い”形”にすることを得意としています。
+        </p>
+        <div class="btn btn-standard">
+          <a href="#contact">ご相談・お問い合わせはこちら</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Consept | 考え方
+    ============================================= -->
+    <section id="consept" class="common-box-style">
+      <div class="wrap">
 
-			<div id="header-wrap">
+        <div class="box-title">
+          <h2 class="title-text">大切にしている考え方</h2>
+        </div>
+        <ul class="items fadein">
+          <li>できる事”と”できない事”を明確にご提示すること。</li>
+          <li>“品質”と”納期”は重要です。 </li>
+          <li>完全リモートワーク主義で居続けること。</li>
+        </ul>
+      </div>
+      <div class="copy-container ">
+        <!-- できる事 | できない事
+        ============================================= -->
+        <div class="copy-sub-container fadein">
+          <div class="container">
 
-				<div class="container clearfix">
+            <div class="row">
+              <p class="copy col-12">ぼくは、できる事は”できる”と言います。 <br>”できない”事は”できる”とは決して言いません。</p>
+            </div>
 
-					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+            <div class="row fadein">
+              <!-- できる事
+              ============================================= -->
+              <div class="col-sm-12 col-md-6">
+                <div class="row copy-sub-header justify-content-center">
+                  <div class="col-sm-12 col-md-6">
+                    <div class="copy-icon">
+                      <img src="/images/solutions_applicationsCommons_soluciones_3008.png" alt="できる事アイコン">
+                    </div>
+                    <h3 class="title">できる事</h3>
+                  </div>
+                </div>
+                <!-- Desigen ---------------------->
+                <div class="row copy-sub-content">
+                  <div class="col-2">
+                    <div class="green-batch">Desigen</div>
+                  </div>
+                  <div class="col-10">
+                    <p class="textsize-s">
+                      フレームワーク/要件にそったWebサイト、ランディングページを制作する事が可能です。
+                    </p>
+                  </div>
+                </div><!-- ./copy-sub-content-->
 
-					<!-- Logo
-					============================================= -->
-					<div id="logo">
-						<a href="index.html" class="standard-logo" data-dark-logo="images/logo.png"><img src="images/logo-dark.png" alt="Satolog Logo"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="images/logo.png"><img src="images/logo-dark.png" alt="Satolog Logo"></a>
-					</div><!-- #logo end -->
+                <!-- Coding ---------------------->
+                <div class="row copy-sub-content">
+                  <div class="col-2">
+                    <div class="green-batch">Coding</div>
+                  </div>
+                  <div class="col-10">
+                    <p class="textsize-s">
+                      デザインカンプ(XD/Photoshop)からHTML/CSSコーディングの実装、また@mediaクエリやBootstrapグリットシステムを使ったレスポンシブコーディング、簡単なjQueryを用いた動きのあるコーディングする事が可能です。
+                    </p>
+                  </div>
+                </div><!-- ./copy-sub-content-->
 
-					<!-- Primary Navigation
-					============================================= -->
-					<nav id="primary-menu" class="not-dark with-arrows">
+                <!-- Validator ---------------------->
+                <div class="row copy-sub-content">
+                  <div class="col-2">
+                    <div class="green-batch">Validator</div>
+                  </div>
+                  <div class="col-10">
+                    <p class="textsize-s">
+                      W3Sに基づいたHTML/CSS品質チェックはもちろん、ご指定のクロスブラウザチェック、見落としがちな誤字・脱字チェックが可能です。
+                    </p>
+                  </div>
+                </div><!-- ./copy-sub-content-->
 
-						<ul class="not-dark">
-							<li class="current"><a href="#"><div>Home</div></a></li>
-							<li><a href="#services"><div>Services</div></a></li>
-							<li><a href="#myskills"><div>My Skills</div></a></li>
-							<li><a href="#aboutme"><div>About Me</div></a></li>
-							<li><a href="#contact"><div>Contact</div></a></li>
-						</ul>
-					</nav><!-- #primary-menu end -->
+              </div><!-- ./col-sm-12 col-md-6 -->
 
-				</div>
+              <!-- できない事
+              ============================================= -->
+              <div class="col-sm-12 col-md-6">
+                  <div class="row copy-sub-header justify-content-center">
+                    <div class="col-sm-12 col-md-6">
+                      <div class="copy-icon">
+                        <img src="/images/multiply_delete_delete_3156.png" alt="できない事アイコン">
+                      </div>
+                      <h3 class="title">できない事</h3>
+                    </div>
+                  </div><!-- ./copy-sub-header -->
+                  <!-- Desigen ---------------------->
+                  <div class="row copy-sub-content">
+                    <div class="col-2">
+                      <div class="green-batch">Desigen</div>
+                    </div>  
+                    <div class="col-10">
+                      <p class="textsize-s">
+                        イラストレータやフォトショップを使った複雑なロゴ、イラスト制作はできません。また、フレームワーク/要件のない曖昧な仕様からWebサイトをデザインする事はできません。
+                      </p>
+                    </div>
+                  </div><!-- ./copy-sub-content -->
+                  <!-- Coding ---------------------->
+                  <div class="row copy-sub-content">
+                    <div class="col-2">
+                      <div class="green-batch">Coding</div>
+                    </div>
+                    <div class="col-10">
+                      <p class="textsize-s">
+                        phpによるWordPressカスタマイズはできません。(準備中です)
+                      </p>
+                    </div>
+                  </div><!-- ./copy-sub-content -->
+                  <!-- Validator ---------------------->
+                  <div class="row copy-sub-content">
+                    <div class="col-2">
+                      <div class="green-batch">Validator</div>
+                    </div>
+                    <div class="col-10">
+                      <p class="textsize-s">とくにありません</p>
+                    </div>
+                  </div><!-- ./copy-sub-content -->
+              </div><!-- ./col-sm-12 col-md-6 -->
 
-			</div>
+            </div><!-- ./row -->
+          </div><!-- ./container -->
+        </div><!-- ./copy-sub-container -->
 
-		</header><!-- #header end -->
+        <!-- 品質と納期
+        ============================================= -->
+        <div class="copy-sub-container">
+          <div class="container">
+            <div class="row justify-content-center">
+              <p class="copy col-12">“品質”と”納期”は重要です。</p>
+            </div>
+            <div class="row justify-content-center sec-strength sec-strength-left fadein">
+              <div class="col-lg-6 col-sm-12">
+                <p class="strength-text">時間をたくさんかければかけるほどモノは良い品質になります。
+                    しかし、納期3日でできるモノに30日の時間をかけても品質は10倍にはなりません。
+                    また、期限が存在します。納期3日に対し1年後だと価値は失います。</p>
+                <p class="strength-text">製品やサービスには品質基準が存在します。 ぼくは日々品質基準を目指し改善し仕事をします。</p>
+              </div>
+              <div class="box-img col-lg-6 col-sm-12">
+                <img src="/images/quality-speed-line.png" alt="品質と時間">
+              </div>
+            </div>
+          </div>
+        </div><!-- ./copy-sub-container -->
+        
+        <!-- リモートワーク主義
+        ============================================= -->
+        <div class="copy-sub-container">
+          <div class="container">
+            <div class="row justify-content-center">
+              <p class="copy col-12">完全リモートワーク主義で居続けること。</p>
+            </div>
+            <div class="row justify-content-center sec-strength fadein">
+              <div class="col-12">
+              <p class="strength-text">誰だって、苦手な事は存在します。ぼくは仕事における”必要のない無駄”はとても苦手です。
+                面直での打ち合わせは”準備”、”経路を調べる”、”身支度”などいろいろコストがかかります。</p>
+                <p class="strength-text">そして、ぼくは自分の家が好きです。なので、ぼくは完全リモートワーカー主義です。
+                打ち合わせは「Skype」または「Zoom」などのオンラインを好みます。</p>
+            </div>
+          </div>
+        </div><!-- ./copy-sub-container -->
+      </div><!-- ./copy-container -->
+    </section>
 
-		<!-- Slider
-		============================================= -->
-		<section id="slider" class="slider-element bg-angle">
+    <!-- Works | 制作実績
+    ============================================= -->
+    <section id="works" class="common-box-style">
+      <div class="wrap">
+        <div class="box-title">
+          <h2 class="title-text">制作実績</h2>
+        </div>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <p class="strength-text col-12">過去の制作実績です。</p>
+          </div>
 
-			<!-- Slider Background Map
-			============================================= -->
-			<img class="img-map parallax" src="demos/hosting/images/svg/map-light.svg" alt="" data-0="opacity: 0.05;margin-top:0px" data-800="opacity: 0.5;margin-top:150px">
+          <div class="row common-case-list fadein">
+            <!-- work1-->
+            <div class="col-sm-6 col-md-4 col-lg-3 work-box">
+              <div class="card img-thumbail">
+                <img class="case-img card-img-top" src="/images/work1-1920--@2x.png" alt="work1">
+                <div class="card-body px-2 py-3">
+                  <h5 class="card-title case-cat">特設ページ</h5>
+                  <p class="card-text">コーポレートサイト内の追加ページ</p>
+                </div><!-- /.card-body -->
+              </div><!-- /.card -->
+            </div><!-- /.col-sm-6 col-lg-4 -->
 
-			<!-- Slider Background Cloud
-			============================================= -->
-			<div class="cloud-wrap">
-				<div class="c1"><div class="cloud"></div></div>
-				<div class="c2"><div class="cloud"></div></div>
-				<div class="c3"><div class="cloud"></div></div>
-				<div class="c4"><div class="cloud"></div></div>
-				<div class="c5"><div class="cloud"></div></div>
-			</div>
+            <!-- work2-->
+            <div class="col-sm-6 col-md-4 col-lg-3 work-box">
+              <div class="card img-thumbail">
+                <img class="case-img card-img-top" src="/images/work2-1920--@2x.png" alt="work2">
+                <div class="card-body px-2 py-3">
+                  <h5 class="card-title case-cat">コーポレート</h5>
+                  <p class="card-text">地域に根付く接骨院</p>
+                </div><!-- /.card-body -->
+              </div><!-- /.card -->
+            </div><!-- /.col-sm-6 col-lg-4 -->
 
-			<!-- Slider Titiles
-			============================================= -->
-			<div class="vertical-middle ignore-header dark">
-				<div class="container">
-					<div class="row justify-content-between align-items-center">
-						<div class="col-md-5">
-							<div class="slider-title">
-								<h2 class="text-white text-rotater mb-3" data-separator="," data-rotate="fadeIn" data-speed="3500">あなたの"やりたい"を<span class="t-rotate text-white">面白く,美しく,カッコよく</span>Webで形に</h2>
-								<p>例えば「Webサイトをリニューアルしたい」「サービスの情報を発信し拡めたい」「もっと知ってもらいたい」「SNSと連携したい」など、なんでもご相談ください</p>
-							</div>
-						</div>
-						<div class="col-md-5 d-none d-md-block">
-							<img src="demos/hosting/images/1.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
+            <!-- work3-->
+            <div class="col-sm-6 col-md-4 col-lg-3 work-box">
+              <div class="card img-thumbail">
+                <img class="case-img card-img-top" src="/images/work3-1920--@2x.png" alt="work3">
+                <div class="card-body px-2 py-3">
+                  <h5 class="card-title case-cat">ポートフォリオ</h5>
+                  <p class="card-text">過去ポートフォリオ</p>
+                </div><!-- /.card-body -->
+              </div><!-- /.card -->
+            </div><!-- /.col-sm-6 col-lg-4 -->
 
-		</section><!-- #slider end -->
+            <!-- work4-->
+            <div class="col-sm-6 col-md-4 col-lg-3 work-box">
+              <div class="card img-thumbail">
+                <img class="case-img card-img-top" src="/images/work4-1920--@2x.png" alt="work4">
+                <div class="card-body px-2 py-3">
+                  <h5 class="card-title case-cat">模写サンプル</h5>
+                  <p class="card-text">サイト模写</p>
+                </div><!-- /.card-body -->
+              </div><!-- /.card -->
+            </div><!-- /.col-sm-6 col-lg-4 -->
 
-		<!-- POINT
-		============================================= -->
-		<section id="POINT">
+            <!-- work5-->
+            <div class="col-sm-6 col-md-4 col-lg-3 work-box">
+              <div class="card img-thumbail">
+                <img class="case-img card-img-top" src="/images/work5-1920--@2x.png" alt="work5">
+                <div class="card-body px-2 py-3">
+                  <h5 class="card-title case-cat">コーポレート</h5>
+                  <p class="card-text">SNS運用キャンプサイト</p>
+                </div><!-- /.card-body -->
+              </div><!-- /.card -->
+            </div><!-- /.col-sm-6 col-lg-4 -->
 
-			<div class="content-wrap nopadding">
+            <!-- work6-->
+            <div class="col-sm-6 col-md-4 col-lg-3 work-box">
+              <div class="card img-thumbail">
+                <img class="case-img card-img-top" src="/images/work6-1920--@2x.png" alt="work6">
+                <div class="card-body px-2 py-3">
+                  <h5 class="card-title case-cat">ランディングページ</h5>
+                  <p class="card-text">美容サロン</p>
+                </div><!-- /.card-body -->
+              </div><!-- /.card -->
+            </div><!-- /.col-sm-6 col-lg-4 -->
 
-				<div class="container clearfix">
+            <!-- work7-->
+            <div class="col-sm-6 col-md-4 col-lg-3 work-box">
+              <div class="card img-thumbail">
+                <img class="case-img card-img-top" src="/images/work7-1920--@2x.png" alt="work7">
+                <div class="card-body px-2 py-3">
+                  <h5 class="card-title case-cat">ランディングページ</h5>
+                  <p class="card-text">美容サロン</p>
+                </div><!-- /.card-body -->
+              </div><!-- /.card -->
+            </div><!-- /.col-sm-6 col-lg-4 -->
 
-					<!-- Slider negetive Box
-					============================================= -->
-					<div class="row justify-content-center slider-box-wrap clearfix">
-						<div class="col-12">
-							<div class="slider-bottom-box">
-								<div class="row align-items-center clearfix">
-									<div class="col-lg-4 mb-3 mb-lg-0">
-										<h2 class="mb-3 h2 t600">POINT</h2>
-									</div>
-									<div class="col-lg-6">
-										<ul class="iconlist m-0 w-80 mx-auto">
-											<li ><img src="demos/hosting/images/svg/checked.svg" width="20" height="20" alt="" class="mr-2">シンプルにデザインできます</li>
-											<li class="pt-3"><img src="demos/hosting/images/svg/checked.svg" width="20" height="20" alt="" class="mr-2">リーズナブルにデザインできます</li>
-											<li class="pt-3"><img src="demos/hosting/images/svg/checked.svg" width="20" height="20" alt="" class="mr-2">計画的にデザインできます</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+            <!-- work8-->
+            <div class="col-sm-6 col-md-4 col-lg-3 work-box">
+              <div class="card img-thumbail">
+                <img class="case-img card-img-top" src="/images/work8-1920--@2x.png" alt="work8">
+                <div class="card-body px-2 py-3">
+                  <h5 class="card-title case-cat">ランディングページ</h5>
+                  <p class="card-text">検索サジェスト</p>
+                </div><!-- /.card-body -->
+              </div><!-- /.card -->
+            </div><!-- /.col-sm-6 col-lg-4 -->
 
-					<!-- Features Section
-					============================================= -->
-					<div id="services" class="heading-block center topmargin-lg divcenter nobottomborder clearfix" style="max-width: 700px">
-						<div class="before-heading">High Happiness</div>
-						<h2>Services</h2>
-						<p>新サービスの立ち上げ、新事業の立ち上げは、サービスリニューアルなどのビジネスポイントにおける情報発信をお手伝いさせていただいます。</p>
-					</div>
-					<div class="clear"></div>
-					<div class="row mt-4 clearfix">
-						<div class="col-lg-4 col-md-6 mb-5">
-							<div class="feature-box not-dark fbox-small">
-								<div class="fbox-icon">
-									<i class="fas fa-mobile-alt"></i>
-								</div>
-								<h3 class="t500 text-dark">Webサイト/レスポンシブ</h3>
-								<p class="t300">スピーディにWebサイトの提供が可能です。またモバイル端末向けに最適なデザインレイアウトを提供できます。</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 mb-5">
-							<div class="feature-box not-dark fbox-small">
-								<div class="fbox-icon">
-									<i class="fab fa-youtube"></i>
-								</div>
-								<h3 class="t500 text-dark">Youtube 動画編集</h3>
-								<p class="t300">Youtubeへの動画編集代行はお任せください。</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 mb-5">
-							<div class="feature-box not-dark fbox-small">
-								<div class="fbox-icon">
-										<i class="fas fa-network-wired"></i>
-									</div>
-									<h3 class="t500 text-dark">ドメイン取得代行</h3>
-									<p class="t300">面倒なドメイン取得代行をさせて頂きます。</p>
-								</div>
-						</div>
-					</div>
-					<div class="row mt-4 clearfix">
-						<div class="col-lg-4 col-md-6 mb-5">
-							<div class="feature-box not-dark fbox-small">
-								<div class="fbox-icon">
-									<i class="fab fa-js-square"></i>
-								</div>
-								<h3 class="t500 text-dark">JavaScript</h3>
-								<p class="t300">Webサイトに動きをつけることができます。簡単な動作でしたらお任せください。</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 mb-5">
-							<div class="feature-box not-dark fbox-small">
-								<div class="fbox-icon">
-									<i class="fab fa-wordpress"></i>
-								</div>
-								<h3 class="t500 text-dark">Wordpress</h3>
-								<p class="t300">CMSでもっともポピュラーな"Wordpress"を利用したWebサイトの構築が可能です。</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 mb-5">
-							<div class="feature-box not-dark fbox-small">
-								<div class="fbox-icon">
-										<i class="fas fa-server"></i>
-									</div>
-									<h3 class="t500 text-dark">サーバー運用代行</h3>
-									<p class="t300">面倒なサーバー運用を代行させて頂きます。</p>
-								</div>
-						</div>
-					</div>	
-				</div>
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.wrap -->
 
-				<!-- Addition Service Section
-				============================================= -->
-				<div id="myskills" class="container clearfix">
-					<div class="row clearfix">
-						<div class="col-md-12">
-							<div class="before-heading">Other Additional Services</div>
-							<h3>My Skills</h3>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="feature-box p-4 media-box" style="border-radius: 6px; box-shadow: 0 2px 4px rgba(3,27,78,.1); border: 1px solid #e5e8ed;">
-										<div class="fbox-media">
-											<i class="fab fa-html5"></i>  <i class="fab fa-css3-alt"></i><i class="fab fa-bootstrap"></i>
-										</div>
-										<div class="fbox-desc">
-											<h3 class="ls0">LP制作</h3>
-											<h5 class="color">納期目安：２week</h5>
-											<p class="mt-2">ご要望をヒヤリングさせて頂き、OenページのLP制作をいたします。お問い合わせフォームについてもご相談ください。</p>
-										</div>
-									</div>
+    </section><!-- /.works -->
 
-									<div class="feature-box p-4 topmargin-sm media-box" style="border-radius: 6px; box-shadow: 0 2px 4px rgba(3,27,78,.1); border: 1px solid #e5e8ed;">
-										<div class="fbox-media">
-											<img src="demos/hosting/images/svg/ruby-icon.svg" style="width: 42px;" alt="">
-										</div>
-										<div class="fbox-desc">
-											<h3 class="ls0">ruby on rails</h3>
-											<h5 class="color">納期目安：３week</h5>
-											<p class="mt-2">DBサービスを使った小規模なWebサイトの構築が可能です。</p>
-											<a href="https://icons8.com/icon/55504/rubyプログラミング言語">Rubyプログラミング言語 icon by Icons8</a>
-										</div>
-									</div>
-								</div>
+    <!-- porofile | 自己紹介
+    ============================================= -->
+    <section id="profile" class="">
+        <div class="header-container">
+          <div class="profile-box-title">
+            <h2 class="title-text">自己紹介</h2>
+          </div><!-- ./box-title -->
+          <div class="profile-box-msg container">
+            <div class="row justify-content-center">
+              <p class="strength-text col-12">ぼくの紹介をさせてください。 こんな人です。</p>
+            </div><!-- ./row -->
+          </div><!-- ./container -->
+        </div><!-- ./header-container -->
 
-								<div class="col-md-6">
-									<div class="feature-box p-4 topmargin-sm media-box" style="border-radius: 6px; box-shadow: 0 2px 4px rgba(3,27,78,.1); border: 1px solid #e5e8ed;">
-										<div class="fbox-media">
-											<img src="demos/hosting/images/svg/bootsrap-icon.svg" style="width: 42px;" alt="">
-										</div>
-										<div class="fbox-desc">
-											<h3 class="ls0">コーディング</h3>
-											<h5 class="color">納期目安：２week</h5>
-											<p class="mt-2">お預かりしたPSD、XDなどのデザインデータから適切にコーディング致します。もちろんレスポンシブ対応です。</p>
-											<a href="https://icons8.com/icon/KKlkH0M92AHI/ブートストラップ" class="">ブートストラップ icon by Icons8</a>
-										</div>
-									</div>
+        <div class="wrap">
+          <div class="container">
+          <div class="row copy-content profile-content">
+            <!--ON-->
+            <div class="col-lg copy-sub-header copy-block fadein">
+              <div class="copy-icon">
+                <img src="/images/system_information_3888@2x.png" alt="ONアイコン">
+              </div>
+              <h3 class="title">ON</h3>
+              <div class="copy-text strength-text">
+                エンジニアです。
+                <br>大学卒業後は主に組織の中でソフトウェア開発を おこなってきました。
+                デジタルマーケティングや広告業に興味があり、独立したく 2019年プログラミグスクールへ通い 2020年にWebフリーランスとして活動しています。 
+                <br>今のスキルは主にコーディングスキルです。
+              </div>
+            </div>
+            <!--OFF-->
+            <div class="col-lg copy-sub-header copy-block fadein">
+              <div class="copy-icon">
+                <img src="/images/home_house_3526@2x.png" alt="OFFアイコン">
+              </div>
+              <h3 class="title">OFF</h3>
+              <div class="copy-text strength-text">
+                富山県出身で愛知県在住です。
+                <br> 基本的にインドア派です。 カメラや写真、動画などのメディア制作が好きです。Premiere Proを使った動画制作もやってます。たまに家族そろってキャンプに出かけます。たまに料理も作ります。最近は鉄フライパンを使ってます。
+              </div>
+            </div>
+          </div>
+        </div><!--- ./wrap -->
+      </div>
+    </section>
 
-									<div class="feature-box p-4 topmargin-sm media-box" style="border-radius: 6px; box-shadow: 0 2px 4px rgba(3,27,78,.1); border: 1px solid #e5e8ed;">
-										<div class="fbox-media">
-											<img src="demos/hosting/images/svg/movie-icon.png" style="width: 42px;" alt="">
-										</div>
-										<div class="fbox-desc">
-											<h3 class="ls0">動画編集</h3>
-											<h5 class="color">納期目安：3day</h5>
-											<p class="mt-2">Adobe Premiere Proを使った簡単な(カット、テロップ、BGM)動画編集の代行をいたします。</p>
-											<a href="https://icons8.com/icon/111161/映画の始まり">映画の始まり icon by Icons8</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="clear"></div>
+    <!-- Contact | お問い合わせ
+    ============================================= -->
+    <section id="contact" class="common-box-style">
+      <div class="wrap">
+        <div class="box-title">
+          <h2 class="title-text">お問い合わせ</h2>
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <p class="strength-text col-12">Web制作で現場のリソース不足にお悩みありましたら、お気軽にご相談ください。</p>
+          </div>
 
-				<!-- Testimonials Section 
-				============================================= -->
-				<div class="section">
-					<div class="container">
+          <div class="row center justify-content-center">
+            <div class="col-md-8">
+              <form class="formrun" action="https://form.run/api/v1/r/mkeiolqdovh5tks91x67cmgf" method="post">
+                <div class="form-group form-text"> 
+                  <input type="name" class="form-control  name="お名前" type="text" placeholder="お名前">
+                  <div data-formrun-show-if-error="お名前">お名前を入力してください</div>
+                </div>
 
-						<div class="heading-block center mt-2 mb-3 divcenter nobottomborder clearfix" style="max-width: 700px">
-							<div class="before-heading">Please let me work together.</div>
-							<h2>Works<h2>
-						</div>
+                <div class="form-group">
+                  <input class="form-control" name="メールアドレス" type="text" data-formrun-type="email" placeholder="example@example.com" data-formrun-required>
+                  <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+                </div>
 
-						<!-- Owl Carousel
-						============================================= -->
-						<div id="oc-testimonials" class="owl-carousel center testimonials-carousel testimonial-full carousel-widget mt-5" data-margin="0" data-items-xs="1" data-items-sm="1" data-items-md="1" data-items-lg="2" data-items-xl="3" data-center="true" data-loop="true" data-autoplay="4000" data-speed="500">
+                <div class="form-group">
+                  <textarea class="form-control" name="お問い合わせ" rows="5" placeholder="お問い合わせ" data-formrun-required></textarea>
+                </div>
 
-							<!--Item 1 start -->
-							<div class="oc-item">
-								<div class="testimonial p-4 noborder noshadow">
-									<div class="testi-content">
-										<h3>ランディングページ</h3>
-										<p class="font-body font-normal">もっともスタンダードなランディングページです</p>
-										<div class="testi-wide-image">
-											<a href="#"><img src="images/sample-works1.png" alt="Customer Testimonails"></a>
-										</div>
-										<div class="testi-meta">
-											Production by <i class="fab fa-twitter"></i><a href="https://twitter.com/3104shimizu"> @3104shimizu</a>
-										</div>
-										<div class="mt-2">
-										<a href="demos/demo1/index.html" class="button text-white button-rounded button-large ml-0">View DEMO</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Item 1 end -->
-
-							<!--Item 2 start -->
-							<div class="oc-item">
-								<div class="testimonial p-4 noborder noshadow">
-									<div class="testi-content">
-										<h3>Freelace Book</h3>
-										<p class="font-body font-normal">フリーランス同士繋がれる場所</p>
-										<div class="testi-wide-image">
-											<a href="#"><img src="images/sample-works2.png" alt="Customer Testimonails"></a>
-										</div>
-										<div class="testi-meta">
-											Production by <i class="fab fa-twitter"></i><a href="https://twitter.com/3104shimizu"> @3104shimizu</a>
-										</div>
-										<div class="mt-2">
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Item 2 end -->
-
-
-							<!--Item 1 start
-							<div class="oc-item">
-								<div class="testimonial p-4 noborder noshadow">
-									<div class="testi-image">
-										<a href="#"><img src="images/sample-works2.png" alt="Customer Testimonails"></a>
-									</div>
-									<div class="testi-content">
-										<p class="font-body font-normal">さとしです。大手企業の組み込みエンジニア→ソーシャルゲームエンジニア→自動車メーカー設計者→Web制作(今ここ)</p>
-										<div class="testi-meta">
-												<i class="fas fa-home"></i> あいち県
-											</div>
-											<div class="testi-meta">
-													<i class="fab fa-twitter"></i><a href="https://twitter.com/3104shimizu"> @3104shimizu</a>
-										</div>
-										<div class="mt-2">
-										<a href="https://3104shimizu.info/profile/" class="button text-white button-rounded button-large ml-0">View More</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							Item 1 end -->
-
-							
-						</div>
-					</div>
-				</div>
-				<!-- About me
-				============================================ -->
-				<div id="aboutme" class="section footer-stick">
-					<div class="section nobg">
-						<div class="container clearfix">
-							<div class="row clearfix">
-								<div class="col-lg-12 center">
-									<h2>ABOUT ME</h2>	
-								</div>
-							</div>
-							<div class="col_half nobottommargin center">
-								<div class="about-image mx-auto">
-									<img src="demos/hosting/images/users/1.png" alt="Image" data-animate="fadeInLeft">
-								</div>
-							</div>
-	
-							<div class="col_half nobottommargin col_last">
-
-								<div class="heading-block" style="padding-top: 40px;">
-	
-									<h3 class="color">さとし</h3>
-									<div class="testi-meta">
-										<i class="fab fa-twitter"></i><a href="https://twitter.com/3104shimizu">@3104shimizu</a>
-									</div>
-									<span>大手企業の組み込みエンジニア→ソーシャルゲームエンジニア→自動車メーカー設計者→Web制作(今ここ)</span>
-	
-								</div>
-	
-								<p>いろんな組織でいろんな方とお仕事させて頂き、はや社会人10年以上。これからも仕事を通して多くの方と出会い、良い関係を大切にしていきたいと思っています。</p>
-	
-								<a href="https://3104shimizu.info/profile/" class="button button-border button-large button-rounded topmargin-sm noleftmargin">VIEW PROFILE</a>
-
-							</div>
-	
-						</div>
-					</div>
-					</div>
-
-				<!-- Bottom Section
-				============================================= -->
-				<div id="contact" class="section bgcolor dark m-0">
-					<div class="container contact-bg">
-						<div class="row center justify-content-center">
-							<div class="col-md-8">
-								<div class="before-heading">Send information</div>
-								<h2>Contact</h2>
-								<p>制作・ご相談、お気軽にご連絡ください。</p>
-
-								<form class="formrun" action="https://form.run/api/v1/r/mkeiolqdovh5tks91x67cmgf" method="post">
-									<div class="form-group"> 
-										<input type="name" class="form-control text-white" name="お名前" type="text" placeholder="お名前">
-										<div data-formrun-show-if-error="お名前">お名前を入力してください</div>
-									</div>
-
-									<div class="form-group">
-										<input class="form-control text-white" name="メールアドレス" type="text" data-formrun-type="email" placeholder="example@example.com" data-formrun-required>
-										<div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
-									</div>
-
-									<div class="form-group">
-										<textarea class="form-control text-white" name="お問い合わせ" rows="5" placeholder="お問い合わせ" data-formrun-required></textarea>
-									</div>
-
-									<!-- ボット投稿をブロックするためのタグ -->
-									<div class="_formrun_gotcha">
-										<style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
-										<label for="_formrun_gotcha">If you are a human, ignore this field</label>
-										<input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
-									</div>
-								<button class="button button-border button-light button-rounded uppercase nomargin" type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">問い合わせしてみる</button>
-							</form>
-						</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-		</section><!-- #content end -->
-
+                <!-- ボット投稿をブロックするためのタグ -->
+                <div class="_formrun_gotcha">
+                  <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+                  <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+                  <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+                </div>
+                <button class="button button-border button-light button-rounded uppercase nomargin" type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">問い合わせしてみる</button>
+              </form>
+            </div>
+          </div><!-- ./row -->
+        </div><!-- ./container -->
+      </div><!-- ./wrap -->
+    </section><!-- ./contact -->
 		<!-- Footer
 		============================================= -->
-		<footer id="footer" class="dark">
+		<footer id="footer" class="footer-container">
 
 			<div class="container">
-
 				<!-- Footer Widgets
 				============================================= -->
-				<div class="footer-widgets-wrap pb-4 clearfix">
-
 					<div class="row">
-
-						<div class="col-md-6 col-sm-6 mb-0 mb-sm-4 mb-md-0">
-
+            <div class="col-md-5 col-sm-12">
 							<div class="widget clearfix">
-
 								<h4>About Satolog Studio</h4>
-
 								<p>We believe in Simple, Creative &amp; Flexible Design Standards.</p>
-
 									<address>
 										<strong>Headquarters:</strong><br>
 										Aichi-ken<br>
 									</address>
-
 							</div>
-
 						</div>
-
-						<div class="col-md-6 col-sm-6 mt-5 mt-sm-0">
-
+						<div class="col-md-7 col-sm-12">
 							<div class="widget clearfix">
-
-								<h4>Social</h4>
-
-								<ul class="list-unstyled iconlist">
-									<li><i class="icon-facebook"></i><a href="https://www.facebook.com/satoshi.shimizu.739" target="_blank"> Facebook</a></li>
-									<li><i class="icon-twitter"></i><a href="https://twitter.com/3104shimizu" target="_blank"> Twitter</a></li>
-									<li><i class="icon-youtube"></i><a href="#" target="_blank"> YouTube</a></li>
-									<li><i class="icon-blogger1"></i><a href="http://3104shimizu.info/" target="_blank"> Blog</a></li>
-									<li><i class="icon-github"></i><a href="https://github.com/Satoshi-Shimizu"> Github</a></li>
-								</ul>
-
+                <h4>Social</h4>
+                <div class="social-container">
+                  <div class="social-box">
+                  <i class="icon-blogger1"></i>
+                      <a href="http://3104shimizu.info/" target="_blank">Blog
+                        <img src="/images/social-01.png" alt="blog-img">
+                      </a>
+                  </div>
+                  <div class="social-box">
+                      <i class="icon-twitter"></i>
+                      <a href="https://twitter.com/3104shimizu" target="_blank">Twitter
+                        <img src="/images/social-02.png" alt="blog-img">
+                      </a>
+                  </div>
+                  <div class="social-box">
+                    <i class="icon-github"></i>
+                      <a href="https://github.com/Satoshi-Shimizu"> Github
+                        <img src="/images/social-03.png" alt="blog-img">
+                      </a>
+                  </div>
+                </div>
 							</div>
-
 						</div>
-
-					</div>
-
-				</div><!-- .footer-widgets-wrap end -->
-
+					</div> <!-- ./row --> 
 				<div class="line line-sm m-0"></div>
-
-			</div>
-
+			</div><!-- ./container -->
 
 			<!-- Copyrights
 			============================================= -->
 			<div id="copyrights" class="nobg">
-
 				<div class="container clearfix">
-
 					<div class="col_half">
-						Copyrights &copy; 2019 All Rights Reserved by Satolog Studio Inc.<br>
+						Copyrights &copy; 2020 All Rights Reserved by Satolabo Studio Inc.<br>
 					</div>
-
 					<div class="col_half col_last tright">
 						<div class="copyrights-menu copyright-links clearfix">
-							<a href="#">Home</a>/<a href="#services">Services</a>/<a href="#myskills">My Skills</a>/<a href="#aboutme">About Me</a>/<a href="#contact">Contact</a>
+							<a href="#">Home</a>/<a href="#consept">大切にしている考え方</a>/<a href="#works">制作実績</a>/<a href="#profile">自己紹介</a>/<a href="#contact">お問い合わせ</a>
 						</div>
 					</div>
-
 				</div>
-
 			</div><!-- #copyrights end -->
 
-		</footer><!-- #footer end -->
+    </footer><!-- #footer end -->
+    
+      <!-- External JavaScripts
+      ============================================= -->
+      <script src="js/jquery.js"></script>
+      
+      <!-- for form run-->
+      <script src="https://sdk.form.run/js/v2/formrun.js"></script>
 
-	</div><!-- #wrapper end -->
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119996452-2"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-119996452-2');
+      </script>
+      
+      <!-- Footer Scripts
+      ============================================= -->
+      <script src="js/functions.js"></script>
 
-	<!-- Go To Top
-	============================================= -->
-	<div id="gotoTop" class="icon-angle-up"></div>
+      <script>
+        $('.menu-trigger').on('click',function(){
+          if($(this).hasClass('active')){
+            $('.menu-trigger').removeClass('active');
+            $('.header-nav').removeClass('active');
+          }else{
+            $(this).addClass('active');
+            $('.header-nav').addClass('active');
+          }
+        });
+      </script>
 
-	<!-- External JavaScripts
-	============================================= -->
-	<script src="js/jquery.js"></script>
-	<script src="js/plugins.js"></script>
-
-	<script src="js/jquery.hotspot.js"></script>
-	<script src="js/components/rangeslider.min.js"></script>
-	
-	<!-- for form run-->
-	<script src="https://sdk.form.run/js/v2/formrun.js"></script>
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119996452-2"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-119996452-2');
-	</script>
-	
-	<!-- Footer Scripts
-	============================================= -->
-	<script src="js/functions.js"></script>
-
-	<script>
-		jQuery(document).ready( function() {
-			var pricingCPU = 1,
-				pricingRAM = 1,
-				pricingStorage = 10,
-				elementCPU = $(".range-slider-cpu"),
-				elementRAM = $(".range-slider-ram"),
-				elementStorage = $(".range-slider-storage");
-
-			elementCPU.ionRangeSlider({
-				grid: false,
-				values: [1,2,4,6,8],
-				postfix: ' Core',
-				onStart: function(data){
-					pricingCPU = data.from_value;
-				}
-			});
-
-			elementCPU.on( 'change', function(){
-				pricingCPU = $(this).prop('value');
-				calculatePrice( pricingCPU, pricingRAM, pricingStorage );
-			});
-
-			elementRAM.ionRangeSlider({
-				grid: false,
-				step: 1,
-				min: 1,
-				from:1,
-				max: 32,
-				postfix: ' GB',
-				onStart: function(data){
-					pricingRAM = data.from;
-					console.log(data);
-				}
-			});
-
-			elementRAM.on( 'onStart change', function(){
-				pricingRAM = $(this).prop('value');
-				calculatePrice( pricingCPU, pricingRAM, pricingStorage );
-			});
-
-			elementStorage.ionRangeSlider({
-				grid: false,
-				step: 10,
-				min: 10,
-				max: 100,
-				postfix: ' GB',
-				onStart: function(data){
-					pricingStorage = data.from;
-				}
-			});
-
-			elementStorage.on( 'change', function(){
-				pricingStorage = $(this).prop('value');
-				calculatePrice( pricingCPU, pricingRAM, pricingStorage );
-			});
-
-			calculatePrice( pricingCPU, pricingRAM, pricingStorage );
-
-			function calculatePrice( cpu, ram, storage ) {
-				var pricingValue = ( Number(cpu) * 10 ) + ( Number(ram) * 8 ) + ( Number(storage) * 0.5 );
-				jQuery('.cpu-value').html(pricingCPU);
-				jQuery('.ram-value').html(pricingRAM);
-				jQuery('.storage-value').html(pricingStorage);
-				jQuery('.cpu-price').html('$'+pricingCPU * 10);
-				jQuery('.ram-price').html('$'+pricingRAM * 8);
-				jQuery('.storage-price').html('$'+pricingStorage * 0.5);
-				jQuery('.pricing-price').html( '$'+pricingValue );
-			}
-		});
-
-		jQuery(window).on( 'load', function(){
-			$('#hotspot-img').hotSpot();
-		});
-	</script>
-
-</body>
-</html>
+    </body>
+  </html>
