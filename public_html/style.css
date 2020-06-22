@@ -148,9 +148,15 @@ header .wrapper .area-nav .header-nav {
   }
 }
 @media only screen and (max-width: 1050px){
-  header .wrapper .area-nav .header-nav li a {
+  header .wrapper .area-nav .header-nav li span {
       display: block;
       padding: 12px 16px;
+      font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  header .wrapper .area-nav .header-nav li span {
       font-size: 1.6rem;
   }
 }
@@ -176,8 +182,8 @@ header .wrapper .area-nav .header-nav li {
 
 .menu-trigger span {
   position: absolute;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  width: 90%;
   height: 2px;
   background-color: #333;
   border-radius: 4px;
@@ -209,22 +215,6 @@ header .wrapper .area-nav .header-nav li {
   }
 }
 
-#menu-consept a::after {
-  display: block;
-  content: 'consept';
-  text-align: center;
-}
-
-#menu-works a::after {
-  display: block;
-  content: 'works';
-  text-align: center;
-}
-#menu-profile a::after {
-  display: block;
-  content: 'profile';
-  text-align: center;
-}
 .munu-text a{
   position: relative;
   display: inline-block;
@@ -264,12 +254,19 @@ header .wrapper .area-nav .header-nav li {
   text-align: center;
   color: #fff;
 }
+
+.kv .wrapper .read-contanier {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 @media screen and (max-width: 500px){
   .kv .wrapper { padding: 0 10px; }
 }
 
 .kv .wrapper .kv-catch-title {
-  font-size: 4.6rem;
+  font-size: 3.6rem;
   font-weight: bold;
   margin:0 0 32px;
   opacity: 0;
@@ -404,19 +401,19 @@ img{
   }
 }
 .title-text {
-  font-size: 3.2rem;
+  font-size: 2.6rem;
   font-weight: bold;
 }
 
 .title-text::after {
-  content: url(/images/anderbar.svg);
+  content: url(images/anderbar.svg);
   display: block;
   margin-bottom: 0.8em;
 
 }
 .wrap ul {
   list-style-type: none;
-  padding: 40px 0px;
+  padding: 40px 15px;
   background: #F7F7F7 0% 0% no-repeat padding-box;
 }
 .wrap .items li {
@@ -431,8 +428,12 @@ img{
   text-align: center;
 }
 
-.copy-container .copy-sub-container .copy {
-  font-size: 2rem;
+.copy-sub-container {
+  padding: 20px 0 10px;
+}
+
+.copy-container .copy-sub-container h3 {
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
@@ -449,12 +450,12 @@ img{
 
 .copy-sub-header .title {
   margin: 0 0 32px;
-  padding: 0 32px;
   font-size: 2rem;
   font-weight: bold;
   color: #333;
   text-align: center;
 }
+
 .copy-sub-content { text-align: justify;}
 .copy-sub-content .green-batch {
   position: absolute;
@@ -486,9 +487,10 @@ img{
 }
 
 .strength-text {
+  text-align: center;
   font-size: 1.6rem;
   line-height: 2;
-  padding: 15px 0px;
+  padding: 15px;
 }
 
 #works {
@@ -497,7 +499,7 @@ img{
 }
 
 #contact {
-  background-image: url(/images/whatsapp-logo_icon-icons.com_57054.png);
+  background-image: url(images/whatsapp-logo_icon-icons.com_57054.png);
   background-repeat: no-repeat;
   background-color:rgba(247,247,247,0.8);
   background-blend-mode: lighten;
@@ -548,7 +550,7 @@ img{
 
 .header-container {
   position: relative;
-  background-image: url(/images/bg2@2x.png);
+  background-image: url(images/bg2@2x.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 0;
@@ -579,15 +581,10 @@ img{
   .profile-box-msg { top: 130%; }
 }
 .copy-block {
-  margin:20px;
+  margin: 20px;
   box-shadow: 3px 3px 6px #00000029;
   border: solid 1px #00000029;
   background: #fff;
-}
-
-.copy-text {
-  padding: 20px;
-  text-align: center;
 }
 
 /* Forms
@@ -806,9 +803,20 @@ body:not(.device-touch) .button {
 
 .line.line-sm { margin: 30px 0; }
 
-
+.footer-container .widget {
+  padding:10px 20px;
+  
+}
 .footer-container {
   padding: 60px 0 30px;
+}
+
+.footer-container p {
+  font-size: 1.4rem;
+}
+
+.footer-container address {
+  font-size: 1.4rem;
 }
 
 #footer .social-container {
@@ -847,6 +855,11 @@ body:not(.device-touch) .button {
 
 #copyrights {
   padding: 10px 0 30px;
+}
+
+#copyrights .col_half,
+#copyrights .col_half .copyright-links a {
+  font-size: .8rem;
 }
 
 @-webkit-keyframes kvcatch01 {
